@@ -1,14 +1,9 @@
 .our-team-section {
   background: #f5f4fa;
-}
 
-.our-team-section .list {
-  display: flex;
-  justify-content: center;
-}
-
-.our-team-section .item:not(:last-child) {
-  margin-right: 30px;
+  .list {
+    @include flex;
+  }
 }
 
 .our-team-section .item {
@@ -16,6 +11,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-name-box {
@@ -55,35 +54,32 @@
 
 .social-nets-icons {
   list-style: none;
-  display: flex;
-  justify-content: center;
+  @include flex;
   gap: 10px;
 }
 
 .social-nets-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-nets-link:hover,
-.social-nets-link:focus {
-  background-color: #2196f3;
-  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    border-radius: 50%;
+  }
 }
 
 .social-nets-icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-nets-link:hover .social-nets-icon,
-.social-nets-link:focus .social-nets-icon {
-  fill: #ffffff;
+  .social-nets-link:hover &,
+  .social-nets-link:focus & {
+    fill: #ffffff;
+  }
 }

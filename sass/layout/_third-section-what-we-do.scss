@@ -1,15 +1,14 @@
 .what-we-do-section {
   padding-top: 0;
-}
 
-.what-we-do-section .list {
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
+  .list {
+    @include flex;
+    z-index: 1;
+  }
 
-.what-we-do-section li:not(:last-child) {
-  margin-right: 30px;
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .what-we-do-item {

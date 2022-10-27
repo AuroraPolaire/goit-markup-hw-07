@@ -1,11 +1,9 @@
 .menu-container {
-  display: flex;
-  align-items: center;
+  @include flex;
 }
 
 .navigation-flex {
-  display: flex;
-  align-items: center;
+  @include flex;
 }
 .navigation li:not(:last-child) {
   margin-right: 50px;

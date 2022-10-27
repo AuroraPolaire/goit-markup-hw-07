@@ -1,12 +1,11 @@
 .navigation {
-  display: flex;
+  @include flex;
   flex-direction: row;
   padding-left: 0px;
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
+  @include flex;
   padding-left: 0px;
   margin-left: auto;
 }
