@@ -2,18 +2,6 @@
   @include flex;
 }
 
-.navigation-flex {
-  @include flex;
-}
-.navigation li:not(:last-child) {
-  margin-right: 50px;
-  padding-left: 0px;
-}
-
-.contacts li:not(:last-child) {
-  margin-right: 50px;
-}
-
 header {
   border-bottom: 1px solid #ececec;
 }

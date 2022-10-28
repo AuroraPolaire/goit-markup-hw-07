@@ -1,9 +1,10 @@
-.special-section {
+.specials-section {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
-.icon-block {
+.specials-section__icon-block {
   height: 120px;
   @include flex;
   margin-bottom: 30px;
@@ -11,7 +12,7 @@
   text-align: center;
 }
 
-.special-section-heading {
+.specials-section__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -19,7 +20,7 @@
   text-transform: uppercase;
   color: var(--heading-color);
 }
-.special-section-text {
+.specials-section__text {
   margin-left: 0px;
   margin-top: 10px;
 

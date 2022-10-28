@@ -1,4 +1,4 @@
-.what-we-do-section {
+.work-section {
   padding-top: 0;
 
   .list {
@@ -11,11 +11,21 @@
   }
 }
 
-.what-we-do-item {
+.section__heading {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000;
+}
+
+.work-section__list-item {
   position: relative;
 }
 
-.what-we-do-picture-1::after {
+.work-section__picture-1::after {
   position: absolute;
   bottom: 0;
   display: block;
@@ -33,7 +43,7 @@
   background: rgba(47, 48, 58, 0.8);
 }
 
-.what-we-do-picture-2::after {
+.work-section__picture-2::after {
   position: absolute;
   bottom: 0;
   display: block;
@@ -51,7 +61,7 @@
   background: rgba(47, 48, 58, 0.8);
 }
 
-.what-we-do-picture-3::after {
+.work-section__picture-3::after {
   position: absolute;
   bottom: 0;
   display: block;
