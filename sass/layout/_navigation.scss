@@ -10,9 +10,10 @@
   margin-left: auto;
 }
 
-.flex__list {
+.navigation__list {
   @include flex;
 }
+
 .navigation__list li:not(:last-child) {
   margin-right: 50px;
   padding-left: 0px;

@@ -1,9 +1,9 @@
-.example-buttons {
+.portfolio__example-buttons {
   @include flex;
   margin-bottom: 56px;
 }
 
-.filter-button {
+.portfolio__filter-button {
   padding: 6px 22px;
 
   font-weight: 500;
@@ -32,6 +32,6 @@
   }
 }
 
-.example-buttons .item:not(:last-child) {
+.portfolio__example-buttons .item:not(:last-child) {
   margin-right: 8px;
 }

@@ -108,7 +108,7 @@ header {
   margin-left: auto;
 }
 
-.flex__list {
+.navigation__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,13 +228,13 @@ header {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.specials-section {
+.specials__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.specials-section__icon-block {
+.specials__icon-block {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -244,7 +244,7 @@ header {
   text-align: center;
 }
 
-.specials-section__heading {
+.specials__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -253,7 +253,7 @@ header {
   color: var(--heading-color);
 }
 
-.specials-section__text {
+.specials__text {
   margin-left: 0px;
   margin-top: 10px;
   font-size: 14px;
@@ -262,10 +262,10 @@ header {
   color: var(--paragraph-color);
 }
 
-.special-section .item {
+.special__list .item {
   max-width: 270px;
 }
-.special-section .item:not(:last-child) {
+.special__list .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -282,13 +282,19 @@ header {
   margin-right: 30px;
 }
 
-.section__heading {
+.section-heading {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   color: #000;
+}
+
+.work__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-section__list-item {
@@ -349,28 +355,28 @@ header {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.our-team__section {
+.team__section {
   background: #f5f4fa;
 }
-.our-team__section .flex__list {
+.team__section .team__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 
-.our-team__section .our-team__list {
+.team__section .team__item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team__name-box {
+.team__name-box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.our-team__name {
+.team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -380,7 +386,7 @@ header {
   color: var(--heading-color);
 }
 
-.our-team__job {
+.team__job {
   margin-bottom: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -428,14 +434,14 @@ header {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.clients__section--list {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 
-.clients__section--box {
+.clients__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -445,16 +451,16 @@ header {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__section--box:hover, .clients__section--box:focus {
+.clients__box:hover, .clients__box:focus {
   border: 1px solid #2196f3;
 }
 
-.clients__section--box:hover .clients__section--icon,
-.clients__section--box:focus .clients__section--icon {
+.clients__box:hover .clients__icon,
+.clients__box:focus .clients__icon {
   fill: var(--accent-color);
 }
 
-.clients__section--icon {
+.clients__icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
@@ -818,14 +824,14 @@ a.contact-form__policy-link {
   margin-left: 10px;
 }
 
-.example-buttons {
+.portfolio__example-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 56px;
 }
 
-.filter-button {
+.portfolio__filter-button {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -839,7 +845,7 @@ a.contact-form__policy-link {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-button:hover, .filter-button:focus {
+.portfolio__filter-button:hover, .portfolio__filter-button:focus {
   color: #fff;
   background-color: var(--accent-color);
   border: 0px;
@@ -847,33 +853,34 @@ a.contact-form__policy-link {
   cursor: pointer;
 }
 
-.example-buttons .item:not(:last-child) {
+.portfolio__example-buttons .item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio-list .item {
-  width: 370px;
+
+.portfolio__example-buttons {
+  gap: 8px;
 }
 
-.portfolio-card-link {
+.card__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-card-link:hover, .portfolio-card-link:focus {
+.card__link:hover, .card__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-card-picture {
+.card__picture {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-card-details {
+.card__details {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -894,12 +901,12 @@ a.contact-form__policy-link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-card-link:hover .portfolio-card-details,
-.portfolio-card-link:focus .portfolio-card-details {
+.card__link:hover .card__details,
+.card__link:focus .card__details {
   transform: translateY(0);
 }
 
-.card-name {
+.card__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -907,14 +914,14 @@ a.contact-form__policy-link {
   color: var(--heading-color);
 }
 
-.card-description {
+.card__description {
   margin-top: 4px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
 }
 
-.portfolio-item-name {
+.card__box {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;

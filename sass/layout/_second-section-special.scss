@@ -1,10 +1,10 @@
-.specials-section {
+.specials__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.specials-section__icon-block {
+.specials__icon-block {
   height: 120px;
   @include flex;
   margin-bottom: 30px;
@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.specials-section__heading {
+.specials__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -20,7 +20,7 @@
   text-transform: uppercase;
   color: var(--heading-color);
 }
-.specials-section__text {
+.specials__text {
   margin-left: 0px;
   margin-top: 10px;
 
@@ -30,7 +30,7 @@
   color: var(--paragraph-color);
 }
 
-.special-section .item {
+.special__list .item {
   max-width: 270px;
 
   &:not(:last-child) {

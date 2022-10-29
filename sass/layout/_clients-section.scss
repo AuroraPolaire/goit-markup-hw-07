@@ -1,9 +1,9 @@
-.clients__section--list {
+.clients__list {
   @include flex;
   gap: 30px;
 }
 
-.clients__section--box {
+.clients__box {
   @include flex;
   width: 170px;
   height: 92px;
@@ -18,12 +18,12 @@
   }
 }
 
-.clients__section--box:hover .clients__section--icon,
-.clients__section--box:focus .clients__section--icon {
+.clients__box:hover .clients__icon,
+.clients__box:focus .clients__icon {
   fill: var(--accent-color);
 }
 
-.clients__section--icon {
+.clients__icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
